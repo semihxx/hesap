@@ -1,0 +1,49 @@
+
+
+input {
+    font-family: 'Open Sans Condensed', sans-serif;
+    padding: 3px 10px;
+    color: #909EAA;
+    border: 2px solid #D2D3D5;
+    font-size: 15px;
+}
+
+
+.button {
+    cursor: pointer;
+}
+
+#cal {
+    margin: 30px;
+}
+
+    #cal ul li {
+        margin: 0 0 5px 0;
+    }
+
+        #cal ul li .btns {
+            width: 280px;
+            float: left;
+            padding: 4px 0;
+        }
+#cal ul li label {
+            width: 280px;
+            float: left;
+            padding: 4px 0;
+        }
+#filter {
+    background: #3d4d5a;
+    padding: 15px 30px;
+}
+
+    #filter label {
+        font-family: 'bebasregular';
+        width: 190px;
+        float: left;
+        color: #FFF;
+        line-height: 31px;
+    }
+#tablo {
+    padding: 3px;
+    border: 2px solid #D2D3D5;
+}

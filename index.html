@@ -1,0 +1,190 @@
+﻿<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8"><link href="css/calc.css" rel="stylesheet" type="text/css">
+    <script src="js/alcipan_hesap2.js"></script>
+    <style>
+        .form {
+            position: absolute;
+            background: #F4F4F4;
+            padding: 48px;
+            left: 0;
+            top: 150px;
+            border: 10px solid #576570;
+        }
+
+        .inputhesap {
+            border: none;
+            background: none;
+            text-align: center;
+        }
+
+        .button {
+            border: 2px solid #D2D3D5;
+            background-color: #D2D3D5;
+            color: #555;
+        }
+
+        .content li, .content ul {
+            list-style: none !important;
+        }
+
+
+        #iletisim .iletisim {
+            width: 45%;
+            float: right;
+            line-height: 25px;
+            list-style: none;
+        }
+
+        .form input, .form textarea {
+            background-color: #F4F4F4;
+            margin: 1% 0;
+        }
+
+        .form .txtIletisim {
+            font-family: 'Open Sans Condensed', sans-serif;
+            padding: 7px 2%;
+            color: #909EAA;
+            width: 96%;
+            border: 2px solid #D2D3D5;
+            font-size: 15px;
+            float: left;
+        }
+
+        .content button {
+            border: 2px solid #D2D3D5;
+            background-color: #D2D3D5;
+            color: #eee;
+            padding: 5px;
+        }
+
+        .content textarea {
+            height: 80px;
+        }
+
+        .tanim {
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+
+        .iletisim i {
+            width: 20px;
+        }
+
+
+        .content {
+            padding: 0 20px;
+        }
+
+        .form h1 {
+            font-family: 'bebasregular';
+            font-size: 30px;
+            margin: 15px 0 10px;
+            color: #3d4e58;
+        }
+
+        .yazi {
+            float: left;
+            width: 260px;
+            line-height: 41px;
+            padding-right: 15px;
+            color: #909EAA;
+            font-family: 'Open Sans Condensed', sans-serif;
+        }
+
+        .yaziMiktar {
+            width: 71px;
+            float: left;
+            line-height: 41px;
+            color: #909EAA;
+            font-family: 'Open Sans Condensed', sans-serif;
+        }
+
+            .yaziMiktar input {
+                width: 51% !important;
+                float: left !important;
+                margin-right: 6px;
+            }
+    </style>
+</head>
+<body>
+    <div class="content">
+    <form action="">
+        <div id="formum">
+            <div id="cal">
+                <h1>Alçıpan Asma Tavan</h1>
+
+                <ul>
+                    <li>
+                        <label>Alçıpan Asma Tavan Yapılacak Alan:</label><input size="10" name="metrekare" style="text-align: right;">
+                        m²</li>
+
+                    <li>
+                        <br>
+                    </li>
+
+                    <li>
+                        <label><strong>Malzeme</strong></label><span><strong style="width: 80px; display: block; float: left; text-align: center;">Miktar</strong></span>
+                        <div style="clear: both"></div>
+                    </li>
+                    <li>
+                        <br>
+                    </li>
+
+
+                    <li>
+                        <label>Alçıpan Flex- 3m²/PLAKA</label><input name="alcipanfx" value="0" size="10" class="inputhesap"></li>
+                    <li>
+                        <label>Tavan C profili 0.50mm 3 metre/BOY</label><input name="artfixTC" value="0" size="10" class="inputhesap"></li>
+                    <li>
+                        <label>Tavan Uprofili 0.50mm 3 metre/BOY</label><input name="artfixTU" value="0" size="10" class="inputhesap"></li>
+                    <li>
+                        <label>Çelik Dübel</label><input name="celikdubel" value="0" size="10" class="inputhesap"></li>
+                    <li>
+                        <label>Askı teli 60</label><input name="askiteli" value="0" size="10" class="inputhesap"></li>
+                    <li>
+                        <label>Askı Maşası</label><input name="askimasasi" value="0" size="10" class="inputhesap"></li>
+                    <li>
+                        <label>Klips </label>
+                        <input name="klips" value="0" size="10" class="inputhesap"></li>
+                    <li>
+                        <label>Ekleme</label><input name="eklemeparcasi" value="0" size="10" class="inputhesap"></li>
+                    <li>
+                        <label>Borazan Vida 3.5x35mm</label><input name="borozanvida" value="0" size="10" class="inputhesap"></li>
+                    <li>
+                        <label>Derz Bandı</label><input name="derzbandi" value="0" size="10" class="inputhesap"></li>
+                    <li>
+                        <label>Derz Alçısı</label><input name="dugagipsderzdolgu" value="0" size="10" class="inputhesap"></li>
+                    <li>
+                        <label>Dübel/Pul/Vida</label><input name="dubelvida" value="0" size="10" class="inputhesap"></li>
+
+                    <li>
+                        <br>
+                    </li>
+
+                    <li>
+                        <div class="btns">
+                            <input class="button" type="button" name="button" value="Yazdır" onclick="window.print(); return false" />
+                            <input id="teklif" class="button" type="button" name="button" value="Teklif İste" onclick="javascript;" />
+                        </div>
+
+                        <input class="button" type="button" name="button" value="Hesapla" onclick="hesapla(this.form)" />
+
+                    </li>
+                </ul>
+                <div style="clear: both"></div>
+                <br />
+                <br />
+
+
+            </div>
+            <div style="clear: both"></div>
+
+        </div>
+        
+    </div>
+    <div style="clear: both"></div>
+</form>
+</body>
+</html>
